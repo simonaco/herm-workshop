@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-gitbook-boilerplate",
+  "name": "workGraphQL",
   "private": true,
   "description": "Documentation, built with mdx",
-  "author": "Praveen <praveen@hasura.io> (@praveenweb)",
+  "author": "Christian Nwamba <nwambachristian@gmail.com> (@christiannwamba)",
   "version": "0.0.1",
   "dependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.7.4",
@@ -28,6 +28,8 @@
     "gatsby-plugin-react-helmet": "^3.1.16",
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-plugin-sitemap": "^2.2.22",
+    "gatsby-plugin-twitter": "^2.1.17",
+    "gatsby-remark-autolink-headers": "^2.1.21",
     "gatsby-remark-copy-linked-files": "^2.1.31",
     "gatsby-remark-images": "^3.1.35",
     "gatsby-source-filesystem": "^2.1.40",

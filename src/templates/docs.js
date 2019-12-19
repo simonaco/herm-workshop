@@ -5,7 +5,6 @@ import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer";
 import styled from "@emotion/styled";
 import { Layout, Link } from "$components";
 import NextPrevious from '../components/NextPrevious';
-import '../components/styles.css';
 import config from '../../config';
 
 const forcedNavOrder = config.sidebar.forcedNavOrder;

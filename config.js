@@ -1,14 +1,14 @@
 const config = {
 	"gatsby": {
 		"pathPrefix": "/",
-		"siteUrl": "https://learn.hasura.io",
+		"siteUrl": "https://work.herm.dev",
 		"gaTrackingId": null
 	},
 	"header": {
-		"logo": "https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/favicon.png",
-		"logoLink": "https://learn.hasura.io",
-		"title": "Gatsby Gitbook Boilerplate",
-		"githubUrl": "https://github.com/hasura/gatsby-gitbook-boilerplate",
+		"logo": "https://res.cloudinary.com/codebeast/image/upload/v1576047740/herm-workshop/favicon.png",
+		"logoLink": "https://work.herm.dev",
+		"title": "workGraphQL",
+		"githubUrl": "https://github.com/christiannwamba/herm-workshop",
 		"helpUrl": "",
 		"tweetText": "",
 		"links": [
@@ -16,7 +16,7 @@ const config = {
 		],
 		"search": {
 			"enabled": true,
-			"indexName": "learn-hasura-test",
+			"indexName": "herm-workshop",
 			"algoliaAppId": process.env.GATSBY_ALGOLIA_APP_ID,
 			"algoliaSearchKey": process.env.GATSBY_ALGOLIA_SEARCH_KEY,
 			"algoliaAdminKey": process.env.ALGOLIA_ADMIN_KEY
@@ -28,17 +28,17 @@ const config = {
     		"/codeblock"
 		],
 		"links": [
-			{ "text": "Hasura", "link": "https://hasura.io"},
+			{ "text": "Herm", "link": "https://herm.dev"},
 		],
 		"frontline": false,
 		"ignoreIndex": true,
 	},
 	"siteMetadata": {
-		"title": "Gatsby Gitbook Boilerplate | Hasura",
-		"description": "Documentation built with mdx. Powering learn.hasura.io ",
+		"title": "Fullstack GraphQL Workshop | Herm",
+		"description": "An End to End Web App Workshop with Modern GraphQL and React",
 		"ogImage": null,
 		"docsLocation": "https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content",
-		"favicon": "https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg"
+		"favicon": "/favicon.ico"
 	},
 };
 

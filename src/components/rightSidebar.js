@@ -2,7 +2,6 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import styled from "@emotion/styled";
 import Link from "./link";
-import './styles.css';
 import config from '../../config';
 
 const forcedNavOrder = config.sidebar.forcedNavOrder;
@@ -44,14 +43,14 @@ const ListItem = styled(({ className, active, level, ...props }) => {
     position: relative;
 
     &:hover {
-      color: rgb(116, 76, 188) !important;
+      color: #E00098 !important;
     }
 
     ${props =>
       props.active &&
       `
       color: #663399;
-      border-color: rgb(230,236,241) !important;
+      border-color: #E00098 !important;
       border-style: solid none solid solid;
       border-width: 1px 0px 1px 1px;
       background-color: #fff;
