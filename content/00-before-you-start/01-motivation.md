@@ -4,14 +4,13 @@ metaTitle: "Motivation"
 metaDescription: "This tweet from Brian makes me feel seen and attacked. These days, as a JavaScript engineer, it has become tough to answer the question, “what are you _really_ good at?"
 ---
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">“Fullstack” developer. <a href="https://t.co/yfymQmJJgq">pic.twitter.com/yfymQmJJgq</a></p>&mdash; Brian Holt (@holtbt) <a href="https://twitter.com/holtbt/status/977419276251430912?ref_src=twsrc%5Etfw">March 24, 2018</a></blockquote>
+[![](https://res.cloudinary.com/codebeast/image/upload/v1576819589/fullstack_developer.png)](https://twitter.com/holtbt/status/977419276251430912)
 
 This tweet from Brian makes me feel seen and attacked. These days, as a JavaScript engineer, it has become tough to answer the question, “what are you _really_ good at?” Sometimes, all I just want to do is build a side project that works.
 
 To make things worse here is another heartbreaking tweet:
 
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Every functional programming tutorial... <a href="https://t.co/ckE6cY4YFe">pic.twitter.com/ckE6cY4YFe</a></p>&mdash; I Am Devloper - Vote for Pedro (@iamdevloper) <a href="https://twitter.com/iamdevloper/status/841650579533369344?ref_src=twsrc%5Etfw">March 14, 2017</a></blockquote>
+[![](https://res.cloudinary.com/codebeast/image/upload/v1576819593/functional_programming.png)](https://twitter.com/iamdevloper/status/841650579533369344)
 
 This situation does not apply to only functional programming tutorials; it applies to ALL learning contents and documentation you will see. Of course, there is a reason for this -- it is not realistic to carry everyone along. You either lose the beginners and keep the professionals or vice versa.
 
