@@ -16,7 +16,7 @@ To get the best out of this workshop, you need to have spent a few days on JavaS
 
 
 - <a href="https://www.howtographql.com/basics/0-introduction/" target="_blank">What is GraphQL</a>
-- <a href="https://www.howtographql.com/basics/1-graphql-is-the-better-rest/" target="_blank">GraphQL vs REST</a>
+- <a href="https://learn.hasura.io/graphql/react/intro-to-graphql" target="_blank">GraphQL vs REST</a>
 - <a href="https://www.howtographql.com/basics/2-core-concepts/" target="_blank">GraphQL Concepts</a>
 - <a href="https://www.howtographql.com/basics/3-big-picture/" target="_blank">How GraphQL Accesses Data</a> (Optional)
 
