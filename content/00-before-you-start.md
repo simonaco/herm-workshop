@@ -16,7 +16,7 @@ In this regard, I went one level above GraphQL docs and existing courses to give
 
 You will:
 
-- Build [Herm](https://herm.dev)
+- Build [Herm](https://app.herm.dev)
 - Start with CRUD functionalities then advance into more complex business requirements and logic.
 - Learn how to schedule events dynamically.
 - Understand and build authentication and authorization for GraphQL apps
