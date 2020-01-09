@@ -37,7 +37,7 @@ const config = {
 		"title": "Fullstack GraphQL Workshop | Herm",
 		"description": "An End to End Web App Workshop with Modern GraphQL and React",
 		"ogImage": null,
-		"docsLocation": "https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content",
+		"docsLocation": "https://github.com/christiannwamba/herm-workshop/tree/master/content",
 		"favicon": "/favicon.ico"
 	},
 };
