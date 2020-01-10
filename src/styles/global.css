@@ -953,3 +953,15 @@ img[alt="The Teacher"] {
 h2 > a:after {
   content: ' ';
 }
+
+form input {
+  width: 70%;
+  padding: 4px;
+  font-size: 14px;
+  border: 1px solid #E7EAF0;
+}
+
+form label {
+  font-weight: normal;
+  width: 70%;
+}

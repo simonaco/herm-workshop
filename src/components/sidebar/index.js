@@ -1,19 +1,19 @@
 import React from "react";
-import Tree from './tree';
-import {StaticQuery, graphql} from "gatsby";
+import Tree from "./tree";
+import { StaticQuery, graphql } from "gatsby";
 import styled from "@emotion/styled";
-import {ExternalLink} from "react-feather";
-import config from '../../../config';
+import { ExternalLink } from "react-feather";
+import config from "../../../config";
 
 const forcedNavOrder = config.sidebar.forcedNavOrder;
 
 // eslint-disable-next-line no-unused-vars
 const ListItem = styled(({ className, active, level, ...props }) => {
-    return (
-      <li className={className}>
-        <a href={props.to} {...props} />
-      </li>
-    );
+  return (
+    <li className={className}>
+      <a href={props.to} {...props} />
+    </li>
+  );
 })`
   list-style: none;
 
@@ -45,7 +45,7 @@ const ListItem = styled(({ className, active, level, ...props }) => {
   }
 `;
 
-const Sidebar = styled('aside')`
+const Sidebar = styled("aside")`
   width: 100%;
   /* background-color: rgb(245, 247, 249); */
   /* border-right: 1px solid #ede7f3; */
@@ -58,25 +58,23 @@ const Sidebar = styled('aside')`
   position: sticky;
   top: 0;
   padding-right: 0;
-  background-color: #FAFAFB;
+  background-color: #fafafb;
 
   @media only screen and (max-width: 1023px) {
     width: 100%;
     /* position: relative; */
     height: 100vh;
   }
-  @media (min-width: 767px) and (max-width:1023px)
-  {
+  @media (min-width: 767px) and (max-width: 1023px) {
     padding-left: 0;
   }
   @media only screen and (max-width: 767px) {
     padding-left: 0px;
-    background-image: url('/herm-bg.png');
+    background-image: url("/herm-bg.png");
     /* background: #372476; */
     height: auto;
   }
 `;
-
 
 const Divider = styled(props => (
   <li {...props}>
@@ -94,8 +92,7 @@ const Divider = styled(props => (
   }
 `;
 
-
-const SidebarLayout = ({location}) => (
+const SidebarLayout = ({ location }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -111,16 +108,37 @@ const SidebarLayout = ({location}) => (
         }
       }
     `}
-    render={({allMdx}) => {
+    render={({ allMdx }) => {
       return (
         <Sidebar>
-          <ul className={'sideBarUL'}>
-            <Tree
-              edges={allMdx.edges}
-            />
+          <ul className={"sideBarUL"}>
+            <form
+              // style="border:1px solid #ccc;padding:3px;text-align:center;"
+              action="https://tinyletter.com/codebeast"
+              method="post"
+              target="popupwindow"
+              onsubmit="window.open('https://tinyletter.com/codebeast', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+            >
+              <p>
+                <label for="tlemail">Let me keep you posted on new content:</label>
+              </p>
+              <p>
+                <input
+                  type="text"
+                  // style="width:140px"
+                  placeholder="Type email, hit enter"
+                  name="email"
+                  id="tlemail"
+                />
+              </p>
+              <input type="hidden" value="1" name="embed" />
+            </form>
+
+            <Divider />
+            <Tree edges={allMdx.edges} />
             <Divider />
             {config.sidebar.links.map((link, key) => {
-              if (link.link !== '' && link.text !== '') {
+              if (link.link !== "" && link.text !== "") {
                 return (
                   <ListItem key={key} to={link.link}>
                     {link.text}
