@@ -2,7 +2,7 @@ const config = {
 	"gatsby": {
 		"pathPrefix": "/",
 		"siteUrl": "https://work.herm.dev",
-		"gaTrackingId": null
+		"gaTrackingId": "UA-156422845-1"
 	},
 	"header": {
 		"logo": "https://res.cloudinary.com/codebeast/image/upload/v1576047740/herm-workshop/favicon.png",
