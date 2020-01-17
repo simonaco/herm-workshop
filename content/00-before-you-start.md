@@ -6,13 +6,15 @@ metaDescription: "Years back, when I started writing as a guest author for scotc
 
 Welcome!
 
+This a free online workshop on everything you need to build fullstack GraphQL apps with Hasura, Next.js, and Serverless. Start from zero and complete a tweet scheduling app.
+
 Years back, when I started writing as a guest author for scotch.io dev blog, I was moved strongly by what we believed in as teachers. We believed that docs do a great job of isolating concepts and going in-depth on how they work. We also believed that this was not enough for real-life situations.
 
 If you know how to handle a request using node and you also know how to make HTTP stateful with sessions and cookies, it does not mean you know how to write authentication logic. As Scotch teachers and writers, we strived to go one more level above docs and show how to merge two or more technologies to make something useful.
 
 This belief formed my years of experience as a teacher. Hence after I teach, write, or talk about the fundamentals of a topic, I feel very uncomfortable until I show you how to apply it to a real-world problem.
 
-In this regard, I went one level above GraphQL docs and existing courses to give you an end-to-end free and practical learning experience for building web apps. You can apply what you learn for mobile too.
+In this regard, I went one level above GraphQL docs and existing courses to give you an **end-to-end** free and practical learning experience for building web apps with heavy **business logic**. You can apply what you learn for mobile too.
 
 You will:
 
