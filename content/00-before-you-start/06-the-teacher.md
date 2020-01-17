@@ -1,5 +1,5 @@
 ---
-title: "0.5 The Teacher"
+title: "0.6 The Teacher"
 metaTitle: "The Teacher"
 metaDescription: "About the workshop's teacher."
 ---
