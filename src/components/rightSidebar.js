@@ -88,7 +88,12 @@ const SidebarLayout = ({ location }) => (
             if ((item.node.fields.slug === location.pathname) || (config.gatsby.pathPrefix + item.node.fields.slug) === location.pathname) {
               if (item.node.tableOfContents.items) {
                 innerItems = item.node.tableOfContents.items.map((innerItem, index) => {
-                  const itemId = innerItem.title ? innerItem.title.replace(/\s+/g, '').toLowerCase() : '#';
+                  let itemId;
+                  if (innerItem.url) {
+                    itemId = innerItem.url[0] === "#" ? innerItem.url.split("#")[1] : innerItem.url;
+                  } else {
+                    itemId = innerItem.title ? innerItem.title.replace(/\s+/g, '').toLowerCase() : '#';
+                  }
                   return (
                     <ListItem
                       key={index}
