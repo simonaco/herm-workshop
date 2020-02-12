@@ -24,8 +24,9 @@ const config = {
 	},
 	"sidebar": {
 		"forcedNavOrder": [
-			"/introduction",
-    		"/codeblock"
+			"/00-before-you-start",
+    	"/01-setup-ui",
+    	"/02-graphql-api"
 		],
 		"links": [
 			{ "text": "Herm", "link": "https://herm.dev"},
