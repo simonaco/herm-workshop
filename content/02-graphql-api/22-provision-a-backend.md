@@ -64,8 +64,10 @@ Open the `docker-compose.yml` file and paste the following configuration:
 version: '3.6'
 services:
   postgres:
-    image: postgres
+    image: postgres:9.6
     restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
     volumes:
     - db_data:/var/lib/postgresql/data
   graphql-engine:
@@ -76,11 +78,9 @@ services:
     - "postgres"
     restart: always
     environment:
-      HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:@postgres:5432/postgres
-      HASURA_GRAPHQL_ENABLE_CONSOLE: "true" # set to "false" to disable console
+      HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:postgres@postgres:5432/postgres
+      HASURA_GRAPHQL_ENABLE_CONSOLE: "true"
       HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup, http-log, webhook-log, websocket-log, query-log
-      ## uncomment next line to set an admin secret
-      # HASURA_GRAPHQL_ADMIN_SECRET: myadminsecretkey
 volumes:
   db_data:
 ```
@@ -139,25 +139,7 @@ You can see the GraphQL engine is running on port 3100 of localhost (0.0.0.0):
 ![](https://paper-attachments.dropbox.com/s_3AC7960F224B1F7A7267EA8FA5552E4542A52D026AA617CF3A5699D55D57A064_1576235609584_image.png)
 
 
-Go to localhost:3100 to see your GraphQL console:
+Go to [http://localhost:3100](http://localhost:3100) to see your GraphQL console:
 
 
 ![](https://paper-attachments.dropbox.com/s_3AC7960F224B1F7A7267EA8FA5552E4542A52D026AA617CF3A5699D55D57A064_1576235794478_image.png)
-
-## Exercise 2: Make your API Private.
-
-At this point, anyone can access your API. We need to lock everything out for now then use auth in the future to allow specific access.
-
-To do this, go to the `docker-compose.yml` file and update the env variables to add one more config:
-
-```yml
-environment:
-HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:@postgres:5432/postgres
-HASURA_GRAPHQL_ENABLE_CONSOLE: "true" # set to "false" to disable console
-HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup, http-log, webhook-log, websocket-log, query-log
-## uncomment next line to set an admin secret
-+ HASURA_GRAPHQL_ADMIN_SECRET: myadminsecretkey
-```
-
-Uncomment the `HASURA_GRAPHQL_ADMIN_SECRET` value and set a strong secret. Once you do that and run `docker-compose up -d`, you will be asked to enter the secret when you visit `localhost:3100`
-
