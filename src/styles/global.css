@@ -42,6 +42,10 @@ h1, h2, h3, .title {
   font-family: 'PT Sans', sans-serif;
 }
 
+h2 {
+  margin-left: -24px;
+}
+
 .video-responsive {
   position: relative;
   padding-bottom: 56.2%;
