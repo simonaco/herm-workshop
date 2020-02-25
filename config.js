@@ -26,7 +26,8 @@ const config = {
 		"forcedNavOrder": [
 			"/00-before-you-start",
     	"/01-setup-ui",
-    	"/02-graphql-api"
+			"/02-graphql-api",
+			"/03-move-to-the-cloud"
 		],
 		"links": [
 			{ "text": "Herm", "link": "https://herm.dev"},
