@@ -64,14 +64,14 @@ Open the `docker-compose.yml` file and paste the following configuration:
 version: '3.6'
 services:
   postgres:
-    image: postgres:9.6
+    image: postgres:10
     restart: always
     environment:
       POSTGRES_PASSWORD: postgres
     volumes:
     - db_data:/var/lib/postgresql/data
   graphql-engine:
-    image: hasura/graphql-engine:v1.1.0
+    image: hasura/graphql-engine:v1.2.0-beta.3
     ports:
     - "3100:8080"
     depends_on:
@@ -116,11 +116,11 @@ f5a37695fe7e: Pull complete
 233830cd10db: Pull complete
 Digest: sha256:c4da9c62c26179440d5dc7409cb7db60f4a498f0f2c080b97fdb9f7ec0b3502b
 Status: Downloaded newer image for postgres:latest
-Pulling graphql-engine (hasura/graphql-engine:v1.0.0-rc.1)...
-v1.0.0-rc.1: Pulling from hasura/graphql-engine
+Pulling graphql-engine (hasura/graphql-engine:v1.2.0-beta.3)...
+v1.2.0-beta.3: Pulling from hasura/graphql-engine
 44657d934963: Pull complete
 Digest: sha256:8d1a90fb733a3680ff773ae9c5bad37b6a87cf0005be3589e7dc4e771f01cfbc
-Status: Downloaded newer image for hasura/graphql-engine:v1.0.0-rc.1
+Status: Downloaded newer image for hasura/graphql-engine:v1.2.0-beta.3
 Creating api_postgres_1 ... done
 Creating api_graphql-engine_1 ... done
 ```

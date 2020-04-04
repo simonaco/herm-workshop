@@ -26,6 +26,7 @@ az postgres server create \
   --admin-user <server_admin_username> \
   --admin-password <server_admin_password> \
   --sku-name B_Gen5_1
+  --version 10
 ```
 
 Few rules to keep an eye on:
@@ -51,7 +52,7 @@ You can open the `herm` resource group once more to confirm that the database ca
 
 Click on the database to expand and see an overview of its properties:
 
-![](https://paper-attachments.dropbox.com/s_743BA1C239D41580A7EBC2288FE3CBB72C6866034772AFBFF0AA485E654CC1C0_1581904899699_image.png)
+![](https://paper-attachments.dropbox.com/s_D1E455E16E08DAA74D4D60DB2DF4FC15958E4AEC653FCADD3E6BCA57015B69CB_1585215494749_image.png)
 
 ## Exercise 2: Configure a Firewall for Security
 

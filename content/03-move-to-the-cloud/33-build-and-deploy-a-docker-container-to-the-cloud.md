@@ -47,14 +47,14 @@ Since our app has been setup as a Docker-based app with a docker-compose file, w
 version: '3.6'
 services:
   postgres:
-    image: postgres:9.6
+    image: postgres:10
     restart: always
     environment:
       POSTGRES_PASSWORD: postgres
     volumes:
     - db_data:/var/lib/postgresql/data
   graphql-engine:
-    image: hasura/graphql-engine:v1.1.0
+    image: hasura/graphql-engine:v1.2.0-beta.3
     ports:
     - "3100:8080"
     depends_on:
@@ -80,7 +80,7 @@ Create a `docker-compose.prod.yml` with the following content:
 version: '3.6'
 services:
   graphql-engine:
-    image: hasura/graphql-engine:v1.1.0
+    image: hasura/graphql-engine:v1.2.0-beta.3
     ports:
     - "8080:8080"
     restart: always
@@ -208,3 +208,31 @@ You can also edit your configs from the web app resource by clicking on **Config
 ![](https://paper-attachments.dropbox.com/s_CF587C16DBFCB550886E57AB2E7BCFF7611E95AB7F653D7F40F3C3CC5B40D207_1582009645303_image.png)
 
 
+## Exercise 4: Logging
+
+You can monitor what is going on with your API by running:
+
+```bash
+az webapp log tail \
+  --resource-group herm \
+  --name hermapi
+```
+
+The log command will show you only logs regarding to deploying and starting up docker. It will not show logs about what is happening internally in your app.
+
+You can enable app logs and to do that, stop the current log process and run the following:
+
+```bash
+az webapp log config \
+    --name hermapi \
+    --resource-group herm \
+    --docker-container-logging filesystem
+```
+
+Setting `--docker-container-logging` to `filesystem` tells Azure to log the app logs to a file. You can the stream this log with the `tail` command:
+
+```bash
+az webapp log tail \
+  --resource-group herm \
+  --name hermapi
+```

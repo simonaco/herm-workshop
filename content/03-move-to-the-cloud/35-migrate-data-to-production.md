@@ -21,7 +21,7 @@ So far, we have seen one part of what makes up Hasura — the console. There is 
 First, you need to install it:
 
 ```bash
-npm install --global hasura-cli
+npm install --global hasura-cli@1.2.0-beta.2
 ```
 
 Initialize Hasura in the same folder where you have the `docker-compose.yml` file:
