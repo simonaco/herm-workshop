@@ -2,6 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import GitHubButton from 'react-github-btn'
 import Link from './link';
+import BetaWarning from './BetaWarning';
 import config from '../../config.js';
 
 import Search from './search/index';
@@ -58,6 +59,7 @@ const Header = ({location}) => (
       const finalLogoLink = logo.link !== '' ? logo.link : '/';
       return (
         <div className={'navBarWrapper'}>
+          <BetaWarning />
           <nav className={'navbar navbar-default navBarDefault'}>
             <div className={'navbar-header navBarHeader'}>
               <Link to={finalLogoLink} className={'navbar-brand navBarBrand'}>
