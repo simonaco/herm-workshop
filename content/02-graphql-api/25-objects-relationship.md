@@ -29,7 +29,7 @@ This is beneficial in two major ways:
 
 ## [Challenge] Nested Query
 
-To prove that we cannot currently query users who belong to an account or vice versa, go to Query Explorer in the GraphiQL and expand the `account` field. We can query `access_token`, `account_name` and `id` but what we cannot query yet is the users attached to each account
+To prove that we cannot currently query users who belong to an account or vice versa, go to Query Explorer in the GraphiQL and expand the `account` field. We can query `access_token`, `account_name` and `id` but what we cannot query yet, the users attached to each account
 
 
 ![](https://paper-attachments.dropbox.com/s_1551D9F5160E6B2BAB45929E0AAE01FBE367AC3F736FBFD7E55D61CB4772FDA9_1581024651799_Screen+Shot+2020-02-06+at+1.30.20+PM.png)
