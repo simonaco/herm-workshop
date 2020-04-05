@@ -9,7 +9,7 @@ To get the best out of this workshop, you need to have spent a few days on JavaS
 
 ## JavaScript
 - <a href="https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/up%20%26%20going/README.md" target="_blank">JavaScript Fundamentals</a>
-- <a href="https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/README.md" target="_blank">ES6 Fundamentales</a>
+- <a href="https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/README.md" target="_blank">ES6 Fundamentals</a>
 
 
 ## GraphQL
