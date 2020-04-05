@@ -186,7 +186,7 @@ To use it, install the `styled-reset` library:
 npm install --save styled-reset
 ```
 
-Import it in `pages/document.js` and render it’s component in the `getInitialProps` function:
+Import it in `pages/_document.js` and render it’s component in the `getInitialProps` function:
 
 ```js
 import Document, { Html, Head, Main, NextScript } from 'next/document';
