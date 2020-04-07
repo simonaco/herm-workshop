@@ -1,6 +1,6 @@
 ---
-title: "4.0 Auhentication"
-metaTitle: "Auhentication"
+title: "4.0 Authentication"
+metaTitle: "Authentication"
 metaDescription: "Add authentication to your frontend app."
 ---
 
