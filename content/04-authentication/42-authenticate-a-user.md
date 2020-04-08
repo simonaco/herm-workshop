@@ -16,7 +16,7 @@ Let’s use the Auth client and API we created to authenticate a user from our N
 
 You can use the client and API details of the Auth0 client and API you created to configure Next.js for authentication.
 
-Back to our Nextjs `app` folder. Create a utils folder in the project and add a `utils.js` file with the following content:
+Back to our Nextjs `app` folder. Create a utils folder in the project and add a `auth0.js` file with the following content:
 
 ```js
 import { initAuth0 } from '@auth0/nextjs-auth0';
