@@ -181,7 +181,7 @@ AUTH0_COOKIE_SECRET="<AUTH0_COOKIE_SECRET>"
 AUTH0_REDIRECT_URL="http://localhost:3000/api/callback"
 ```
 
-Install a `.env` parder
+Install a `.env` parser
 
 ```bash
 npm install --save dotenv
