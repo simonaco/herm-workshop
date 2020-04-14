@@ -35,3 +35,6 @@ To get the best out of this workshop, you need to have spent a few days on JavaS
  - Windows
  - Linux
 
+## Other Requirements
+- Node (v10+)
+- NPM/Yarn (whichever package manager you prefer)
