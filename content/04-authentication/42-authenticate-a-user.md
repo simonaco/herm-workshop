@@ -207,7 +207,7 @@ export default {
 };
 ```
 
-To attach the env variables on `proces.env`, you need to require the `dotenv` module and set it up with the `config` method.
+To attach the env variables on `process.env`, you need to require the `dotenv` module and set it up with the `config` method.
 
 **Task 3: Use Config**
 
