@@ -25,7 +25,7 @@ az postgres server create \
   --location uksouth \
   --admin-user <server_admin_username> \
   --admin-password <server_admin_password> \
-  --sku-name B_Gen5_1
+  --sku-name B_Gen5_1 \
   --version 10
 ```
 
