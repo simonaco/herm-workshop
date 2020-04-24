@@ -156,7 +156,7 @@ az webapp deployment source config \
  --name <APP NAME> \
  --repo-url <REPO URL eg: https://github.com/christiannwamba/herm-app> \
  --resource-group herm \
- --git-token 27580c0252097cedabd3544c904ecaad99c41642 \
+ --git-token <GITHUB_ACCESS_TOKEN> \
  --slot staging
 ```
 
